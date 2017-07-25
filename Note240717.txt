@@ -1,0 +1,21 @@
+- Database: EShopV10
+- Step 1: remmber copy jar libs to lib folder
+- Step 2: remmber config eshop.cfg.xml file in src folder
+- Step 3: create eshop.entity package. After that,
+  + Create entities class as the following tables in database, 
+  remmber setup relationship between entities
+  + Create EShopV10 and create openSession function at this package
+- Step 4: create eshop.servlet package. After that,
+  + Create servlet named like as the following example: CategoryServlet
+  + extends HttpServlet like as the following example: 
+  public class CategoryServlet extends HttpServlet{
+        ...//doGet, doPost method here
+  }
+  + Create web servlet annotation like as the following example: @WebServlet("/category.php")
+  + Write function code in doGet/doPost method in conjunction with jsp form
+- Step 5: at WebContent folder, create jsp files in conjunction with servlet created before
+* Note: 
+- The biggest difference between servlets is in the code lines at method doPost, doGet
+- Understand in when to use doPost/doGet and types of queries in that method
+(types of queries: 10 types at previous lesson, review to remember)
+
